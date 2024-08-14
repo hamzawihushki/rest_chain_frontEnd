@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: mainBold;
+  src: url(../public/Fonts/JosefinSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: mainRegular;
+  src: url(../public/Fonts/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: mainItalic;
+  src: url(../public/Fonts/JosefinSans-Italic.ttf);
+}
+@font-face {
+  font-family: mainThin;
+  src: url(../public/Fonts/JosefinSans-Medium.ttf);
+}
+
+body {
+  /* background-image: url(../assets/images/Iphone\ X\ Wallpaper\ 4K\ Space\ Trick.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-color: #000231; */
+
+  background: -webkit-linear-gradient(to right, #2b32b2, #1488cc);
+  background: linear-gradient(to right, #2b32b2, #1488cc);
+
+  margin: 0;
+  height: 100vh;
+  font-family: mainBold !important;
+}
+.custom-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  min-height: 90vh;
+  height: 90vh;
+}
+.css-ij3ygm-MuiInputBase-root-MuiFilledInput-root,
+.css-nuh4f7-MuiInputBase-root-MuiFilledInput-root {
+  font-family: mainRegular !important;
+  font-size: 20px;
+  border-radius: 10px 10px 0 0 !important;
+}
+.css-100comy-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 10px 10px 0 0 !important;
+  background-color: #ffffff !important;
+  font-family: mainRegular !important;
+  font-size: 20px;
+  width: 150px !important;
+}
+.css-ij3ygm-MuiInputBase-root-MuiFilledInput-root {
+  width: 100%;
+}
+.main-btn {
+  height: 45px;
+  font-size: 19px !important;
+}
+.register {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  background-color: #3e5c6600;
+  .image-wrapper {
+    flex: 1;
+    text-align: center;
+  }
+  form {
+    flex: 1;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 41px;
+    background: #ffffff;
+    font-family: mainBold !important;
+    border-radius: 20px;
+    .textfield {
+      width: 50%;
+      height: 50px;
+      background-color: #ffffff;
+      font-size: 25px !important;
+    }
+  }
+}
+.FORM {
+  h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: mainBold;
+  }
+  .description {
+    font-size: 24px;
+    color: #000000a1;
+    text-align: center;
+    padding: 0 20%;
+    margin: 0 !important;
+    font-family: mainThin;
+  }
+}
+.basic {
+  height: auto !important;
+  form {
+    gap: 30px;
+    margin-bottom: 50px !important;
+    padding: 30px 0;
+  }
+}
+/* Add this CSS to your stylesheet */
+
+.maintenance-data {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for the container */
+  border-radius: 8px; /* Rounded corners for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.maintenance-data h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #333; /* Dark color for the heading */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Collapse borders for a cleaner look */
+}
+
+th,
+td {
+  padding: 12px 15px; /* Padding for table cells */
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid #ddd; /* Light border for table rows */
+}
+
+th {
+  background-color: #f4f4f4; /* Light grey background for header */
+  color: #333; /* Dark color for header text */
+  font-weight: bold; /* Bold text for headers */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row background */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Slightly darker background on hover */
+}
+
+td {
+  font-size: 0.9em; /* Slightly smaller text for table cells */
+}
+
+@media (max-width: 600px) {
+  table,
+  th,
+  td {
+    display: block; /* Make table block-level on small screens */
+  }
+
+  th,
+  td {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: right; /* Align text to the right on small screens */
+  }
+
+  th {
+    position: absolute;
+    left: -9999px;
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%;
+    border-bottom: 1px solid #ddd;
+  }
+
+  td::before {
+    content: attr(
+      data-label
+    ); /* Add data-label attribute content before cell value */
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+}
